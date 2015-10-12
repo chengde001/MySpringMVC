@@ -1,4 +1,4 @@
-package com.myspringmvc.app.form;
+package com.myspringmvc.app.dto;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -8,16 +8,13 @@ import org.hibernate.validator.constraints.NotEmpty;
 import lombok.Data;
 
 @Data
-public class EmployeeListForm {
+public class EmployeeDto {
 	
-	@NotEmpty(message = "名前は必須です")
     private String name;
-	@NotNull(message = "年齢は必須です")
-    @Min(value = 18, message = "{value}以上の値を設定してください")
-	private Integer age;
+    private Integer age;
     private String memo;
-	
-    public String getName() {
+    
+	public String getName() {
 		return name;
 	}
 	public void setName(String name) {

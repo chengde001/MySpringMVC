@@ -120,7 +120,19 @@
 			<artifactId>lombok</artifactId>
 			<version>1.16.6</version>
 			<scope>provided</scope>
-		</dependency> 
+		</dependency>
+		<!-- validation-api(入力値検証で使用) -->
+		<dependency>
+		    <groupId>javax.validation</groupId>
+		    <artifactId>validation-api</artifactId>
+		    <version>1.1.0.Final</version>
+		</dependency>
+		<!-- Hibernate(入力値検証で使用) -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>5.2.2.Final</version>
+		</dependency>
 	</dependencies>
     <build>
         <plugins>
