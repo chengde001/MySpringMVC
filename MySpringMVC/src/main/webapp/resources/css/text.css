@@ -9,9 +9,19 @@ body {
 	margin: 0;
 	font-size: 96%;
 	color: #333;
-	text-align: center;
+	/*text-align: center; */
 	background-color: #ECECE6;
 }
+
+div#container{width:802px}
+div#header {background-color:#99bbbb;}
+div#menu {background-color:#ffff99; height:500px; width:100px; float:left;}
+div#content {background-color:#EEEEEE; height:500px; width:700px; float:left;}
+div#footer {background-color:#99bbbb; clear:both; text-align:center;}
+h1 {margin-bottom:0;}
+h2 {margin-bottom:0; font-size:14px;}
+ul {margin:0;}
+li {list-style:none;}
 
 p, /* 文章の行間を指定 */
 #main ul,
